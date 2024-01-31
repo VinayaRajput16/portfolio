@@ -662,7 +662,7 @@ section{
     height: 220px;
 }
 .contact-form form .send{
-    display: inline-block;
+    /* display: inline-block; */
     padding: 14px 60px;
     background-color: #0ef;
     border-radius: 40px;
@@ -774,5 +774,62 @@ section{
         font-size: 50px;
         line-height: 1;
         text-align: center;
+    }
+    .contact-form form .send{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    .about-text h2 {
+        font-size: 0.7rem;
+    }
+    .about-text h4 {
+        font-size: 0.9rem;
+        margin: 4px 0;
+    }
+    .about-text p {
+        font-size: 0.5rem;
+        margin-bottom: 4rem;
+    }
+    .sub-title {
+        font-size: 0.9rem;
+        padding-bottom: 25px;
+    }
+    .services-list div h2 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .services-list div p{
+        font-size: 0.8rem;
+    }
+    .services-list div{
+        padding: 20px;
+    }
+    .technical-bars {
+        margin-left:20px;
+    }
+    .main-text h2 {
+        font-size: 1.5rem;
+        padding-bottom: 10px; 
+    }
+    .contact-text h2 {
+        font-size: 1rem;
+    }
+    .contact-text p {
+        line-height: normal;
+        margin-bottom: 2rem;
+        font-size: 0.8rem;
+    }
+    .contact-form form input, form textarea{
+        padding: 10px;
+    }
+    .contact-list i{
+        margin-right: 2px;
+    }
+    .contact{
+        margin-top: 0px;
     }
 }
