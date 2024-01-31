@@ -58,7 +58,7 @@ body{
     width: 100%;
     justify-content:space-between ;
     height: 100vh;
-    background: url(/img/bg.avif) no-repeat ;
+    background: url(./img/bg.avif) no-repeat ;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -147,7 +147,7 @@ body{
     grid-template-columns: repeat(2, 1fr);
     
     gap: 1.5rem;
-    background: url(/img/bg.avif) no-repeat ;
+    background: url(./img/bg.avif) no-repeat ;
 }
 .about-img img{
     padding-bottom: 20%;
@@ -180,7 +180,7 @@ body{
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
-    background: url(/img/bg.avif) no-repeat ;
+    background: url(./img/bg.avif) no-repeat ;
 }
 .sub-title{
     text-align: center;
@@ -255,7 +255,7 @@ section{
     flex-wrap: wrap; */
     /* flex-direction: column; */
     padding: 25px 0px;
-    background: url(/img/bg.avif) no-repeat ;
+    background: url(./img/bg.avif) no-repeat ;
 }
 .container1{
    display: flex;
