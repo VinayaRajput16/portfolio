@@ -1,0 +1,40 @@
+@media print{
+    body {
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    .no-print-border{
+      border-width: 0px !important;
+      border-color: transparent !important;
+      max-height: none !important;
+    }
+    .resume-preview-wrap .no-print{
+      display: none !important;
+    }
+    .scaling-area{
+      transform-origin: 0 0 !important;
+      zoom: 1.24 !important;
+    }
+    ol{
+      padding-left: 3px;
+    }
+    .header-part{
+      padding-top: 0;
+    }
+    @page {
+      /* size: 6in 9in; */
+      /* margin: 0 !important; */
+    }
+    .resume-preview-wrap .resume-preview{
+      margin-top: 0 !important;
+    }
+  }
+  /* .no-print-border{
+    border-width: 0px !important;
+    border-color: transparent !important;
+    max-height: none !important;
+  }
+  .scaling-area{
+    transform-origin: top left !important;
+    zoom: 1.15 !important;
+} */

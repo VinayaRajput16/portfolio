@@ -12,3 +12,8 @@ let navbar= document.querySelector('.navbar');
 menu.onclick = function(){
     navbar.classList.toggle('active');
 }
+
+
+    // document.querySelector('.btn-box').onclick = function () {
+    //     location.href = "";
+    // };
