@@ -286,6 +286,9 @@ section{
 .technical-bars .bar .info{
     margin-bottom: 5px;
 }
+.technical-bars .bar .info :nth-child(2){
+    margin-left: 700px;
+}
 .technical-bars .bar .info span{
     font-size:17px;
     font-weight: 500;
@@ -327,19 +330,19 @@ section{
     width: 90%;
 }
 .progress-line.css span{
-    width: 60%;
-}
-.progress-line.js span{
     width: 85%;
 }
+.progress-line.js span{
+    width: 65%;
+}
 .progress-line.node-js span{
-    width: 90%;
+    width: 60%;
 }
 .progress-line.react span{
-    width: 90%;
+    width: 65%;
 }
 .progress-line.express span{
-    width: 90%;
+    width: 50%;
 }
 .progress-line span::after{
     position: absolute;
@@ -780,6 +783,9 @@ section{
         justify-content: center;
         align-items: center;
     }
+    .technical-bars .bar .info :nth-child(2){
+        margin-left: 250px;
+    }
 }
 
 @media only screen and (max-width: 430px){
@@ -831,6 +837,9 @@ section{
     }
     .contact{
         margin-top: 0px;
+    }
+    .technical-bars .bar .info :nth-child(2){
+        margin-left: 120px;
     }
 }
 
