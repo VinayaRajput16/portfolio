@@ -837,6 +837,7 @@ section{
     }
     .contact{
         margin-top: 0px;
+        grid-template-columns: none;
     }
     .technical-bars .bar .info :nth-child(2){
         margin-left: 120px;
