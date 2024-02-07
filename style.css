@@ -87,7 +87,7 @@ body{
 .home-content h1{
     font-size: 56px;
     font-weight: 700;
-    margin: -3px 0;
+    margin: 3px 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
 }
@@ -131,15 +131,13 @@ body{
     text-decoration: none;
     font-weight: 600;
     opacity: 1;
-    animation:  slideTop 1s wase forwards;
+    animation:  slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 }
 .btn-box:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+    box-shadow: 0 0 5px cyan;
 }
 
 .about{
@@ -191,17 +189,18 @@ body{
     color: #0ef;
 }
 .container{
-    padding: 90px;
+    padding: 40px;
 }
 .services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-    grid-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
 .services-list div{
+    width: 30%;
     background-color: transparent;
     padding: 40px;
+    margin: 15px;
     font: 13px;
     font-weight: 13px;
     border-right: 10px;
@@ -676,14 +675,13 @@ section{
     opacity: 0;
     animation:  slideTop 1s ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 5px #0ef,
-    0 0 25px #0ef;
+    box-shadow: 0 0 5px cyan;
 }
 
 .contact-form form .send:hover{
-    box-shadow: 0 0 5px cyan,
-    0 0 25px cyan, 0 0 50px cyan,
-    0 0 100px cyan, 0 0 200px cyan
+   
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
 }
 
 .last-text p{
@@ -801,7 +799,7 @@ section{
         margin-bottom: 4rem;
     }
     .sub-title {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
         padding-bottom: 25px;
     }
     .services-list div h2 {
@@ -815,7 +813,11 @@ section{
         padding: 20px;
     }
     .technical-bars {
-        margin-left:20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
     }
     .main-text h2 {
         font-size: 1.5rem;
@@ -841,6 +843,45 @@ section{
     }
     .technical-bars .bar .info :nth-child(2){
         margin-left: 120px;
+    }
+    .home{
+        height: 60vh;
+    }
+    .home-content h3{
+        font-size: 1rem;
+    }
+    .home-content h1{
+        font-size: 2rem;
+    }
+    .home-content p{
+        font-size: 0.8rem;
+    }
+    .home-sci a {
+        width: 35px;
+        height: 35px;
+        margin: 30px 10px 30px 0;
+    }
+    .btn-box {
+        display: inline-block;
+        padding: 10px 15px;
+        border-radius: 40px;
+        font-size: 16px;
+        letter-spacing: 0px;
+    }
+    .services-list div{
+        width: 100%;
+        padding: 30px;
+        margin: 15px;
+        font: 13px;
+    }
+    .services-list{
+        margin-top: 30px;
+    }
+    .row{
+        margin: 0 0 30px 0;
+    }
+    .percentage{
+        margin-left: -20px;
     }
 }
 
