@@ -142,23 +142,22 @@ body{
 
 .about{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background: url(./img/bg.avif) no-repeat ;
     background-size: cover;
-    background-position: center;
-  
+    background-position: center; 
 }
 .about-img img{
     padding-bottom: 20%;
     max-width: 630px;
     height: auto;
-    width: 100%;
     border-radius: 8px;
 }
 .about-text{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 15px;
 }
 .about-text h2{
     font-size: 2rem;
@@ -178,6 +177,9 @@ body{
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+}
+.about-text .btn-box{
+    width: 40%;
 }
 #services{
     color: aliceblue;
