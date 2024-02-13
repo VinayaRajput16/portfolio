@@ -141,11 +141,12 @@ body{
 }
 
 .about{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    
-    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
     background: url(./img/bg.avif) no-repeat ;
+    background-size: cover;
+    background-position: center;
+  
 }
 .about-img img{
     padding-bottom: 20%;
@@ -153,6 +154,11 @@ body{
     height: auto;
     width: 100%;
     border-radius: 8px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .about-text h2{
     font-size: 2rem;
@@ -179,6 +185,8 @@ body{
     line-height: 1.4;
     margin-bottom: 4rem;
     background: url(./img/bg.avif) no-repeat ;
+    background-size: cover;
+    background-position: center;
 }
 .sub-title{
     text-align: center;
@@ -255,6 +263,9 @@ section{
     /* flex-direction: column; */
     padding: 25px 0px;
     background: url(../img/bg.avif) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 .container1{
    display: flex;
