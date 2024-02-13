@@ -147,8 +147,11 @@ body{
     background-size: cover;
     background-position: center; 
 }
-.about-img img{
+.about-img{
     padding-bottom: 20%;
+}
+.about-img img{
+   
     max-width: 630px;
     height: auto;
     border-radius: 8px;
@@ -800,6 +803,15 @@ section{
 }
 
 @media only screen and (max-width: 430px){
+    .about {
+        flex-direction: column;
+    }
+    .about-img{
+        padding: 12px;
+    }
+    .about-img img{
+        width: 100%;
+    }
     .about-text h2 {
         font-size: 0.7rem;
     }
@@ -810,6 +822,9 @@ section{
     .about-text p {
         font-size: 0.5rem;
         margin-bottom: 4rem;
+    }
+    .about-text .btn-box {
+        width: 50%;
     }
     .sub-title {
         font-size: 1.5rem;
