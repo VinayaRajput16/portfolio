@@ -914,7 +914,7 @@ section{
     }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1080px) {
     /*  styles here for larger screens */
     .header {
         padding: 50px;
@@ -1057,7 +1057,4 @@ section{
 }
 .resume-container a:hover{
     box-shadow: 4px 4px 30px rgb(55, 53, 53);
-}
-@media (min-width: 1080px) {
-    
 }
