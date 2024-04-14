@@ -996,6 +996,9 @@ section{
         padding: 15px;
         max-width: 750px;
     }
+    .about-text p{
+        font-size: 1.5rem;
+    }
     #services {
         display: flex;
         justify-content: center;
@@ -1019,7 +1022,6 @@ section{
         font-weight: 400;
         border-right: 0px;
     }
-
 }
 
 /* Resume container */
