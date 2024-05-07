@@ -1,48 +1,39 @@
+/* Global styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
     color: #fff;
-    background: rgb(0, 0, 0);
+    background: #000;
 }
-/* header section  */
 
-.navbar{
-    background-color: rgb(0, 0, 0);
-    box-shadow: 2px 3px 10px rgb(255, 255, 255);
+/* Header section */
+.navbar {
+    background-color: #000;
+    box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.5);
 }
-.navbar-brand{
+
+.navbar-brand {
     letter-spacing: 2px;
     padding: 20px;
 }
- .nav-item .nav-link{
-    color: white;
+
+.nav-item .nav-link {
+    color: #fff;
 }
-.nav-item .nav-link:hover{
+
+.nav-item .nav-link:hover {
     color: #0ef;
 }
-.hero-section {
-    position: relative;
-    /* Add this to make it a reference point for absolute positioning */
-    height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-
-
-/* home content */
-/* Custom CSS for the hero section */
 
 /* Hero section */
 .hero {
     background-image: url('./img/pikaso_texttoimage_black-themed-workspace-.jpeg');
-    /* Replace 'hero-background.jpg' with your actual background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -53,7 +44,6 @@ body {
     overflow: hidden;
 }
 
-/* Overlay for the hero section */
 .hero::after {
     content: '';
     position: absolute;
@@ -62,10 +52,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent black overlay */
 }
 
-/* Hero content */
 .hero-content {
     text-align: center;
     color: #fff;
@@ -73,16 +61,16 @@ body {
     position: relative;
 }
 
-/* Hero title */
-.hero-content .container h2 {
+.hero-content h2 {
     font-size: 2.3rem;
     margin-bottom: 20px;
     animation: fadeInDown 1s ease-out;
 }
-.hero-content h4{
+
+.hero-content h4 {
     animation: fadeInDown 1s ease-out;
 }
-/* Hero description */
+
 .hero-content h3 {
     font-size: 1.2rem;
     max-width: 600px;
@@ -90,24 +78,19 @@ body {
     animation: fadeInUp 1s ease-out;
 }
 
-.hero-content .contaier {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
- .para{
+.hero-content .para {
     font-size: 1.2rem;
     animation: fadeInUp 1s ease-out;
 }
-h3.intro{
+
+.hero-content h3.intro {
     font-size: 1.7rem;
 }
 
-span.text{
+span.text {
     color: #0ef;
     animation: fadeInUp 1s ease-out;
 }
-/* Hero button */
 
 .wrapper {
     display: flex;
@@ -123,8 +106,8 @@ span.text{
     font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: 1px solid gray;
+    color: #000;
+    border: 1px solid #ccc;
     border-radius: 5px;
     letter-spacing: 2px;
     text-align: center;
@@ -146,12 +129,12 @@ span.text{
     left: 0;
     width: 0;
     height: 100%;
-    background: #000000;
+    background: #000;
     transition: all .35s;
 }
 
 .hover:hover {
-    color: white;
+    color: #fff;
 }
 
 .hover:hover:after {
@@ -192,51 +175,15 @@ span.text{
         transform: scale(1);
     }
 }
-
-/* end of home content */
-.content {
-    position: relative;
-    /* Position the content relative to its parent */
-    z-index: 1;
-    /* Bring the content above the video */
-    /* color: #f1f1f1; */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+section{
+    background: url(./img/bg.avif);
 }
-
-.content h1 {
-    font-weight: 700;
-    color: #0ef;
-}
-
-.content p {
-    max-width: 50%;
-}
-
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #0ef;
-    color: #000000;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ffffff;
-    color: black;
-}
-
-/* about section  */
+/* About section */
 #about {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(0, 0, 0);
-    padding: 4rem 0 3rem 0;
+    background-color: #000;
+    padding: 4rem 0 3rem;
 }
 
 #about .video {
@@ -257,77 +204,64 @@ span.text{
     flex-direction: column;
     max-width: 50%;
 }
-#about .discription p{
+
+#about .discription p {
     text-align: justify;
     max-width: 80%;
 }
-.discription h2 span{
+
+#about .discription h2 span {
     color: #0ef;
 }
-/* services section */
-.service-head{
-    background-color: #000000;
+
+/* Services section */
+.service-head {
+    background-color: #000;
     color: #fff;
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    padding: 0.5rem 0 1rem 0;
+    padding: 0.5rem 0 1rem;
 }
-.service-head span{
+
+.service-head span {
     margin: 2px 12px;
     font-size: 2rem;
     color: #0ef;
 }
+
 #services {
     display: flex;
     padding: 3rem 2rem;
     justify-content: space-evenly;
-    padding: 3rem 0 4rem 0;
+    padding: 3rem 0 4rem;
+    flex-wrap: wrap;
 }
 
 #services .card {
-    box-shadow: 2px 3px 10px rgb(0,238,255,0.5);
+    box-shadow: 2px 3px 10px rgba(0, 238, 255, 0.5);
+    margin: 0.4rem;
     transition: transform 0.3s ease-in-out;
 }
-#services .card:hover{
-    box-shadow: 3px 5px 12px rgb(0,238,255,0.8);
+
+#services .card:hover {
+    box-shadow: 3px 5px 12px rgba(0, 238, 255, 0.8);
     transform: scale(1.01);
-    cursor: auto;
+    cursor: pointer;
 }
 
-/* unknown content */
-section {
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* flex-direction: column; */
-    padding: 25px 0px;
-    background: url(../img/bg.avif) no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-}
-
-.container1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* portfolio section */
+/* Portfolio section */
 .main-text {
-    /* padding-top: 130px; */
-    /* margin-top: 200px; */
-
+    padding-top: 130px;
 }
 
 .main-text h2 {
-    color: white;
+    color: #fff;
     font-size: 2rem;
     letter-spacing: 1.2px;
     line-height: 1;
     text-align: center;
     padding-bottom: 25px;
-    margin: 12px;
 }
 
 .main-text h2 span {
@@ -337,7 +271,6 @@ section {
 .portfolio-content {
     display: flex;
     flex-direction: column;
-    /* grid-template-columns: repeat(auto-fit, minmax(359px, auto)); */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -350,8 +283,7 @@ section {
     cursor: pointer;
     padding: 12px;
     width: 70%;
-    /* border: 1px double #555557; */
-    margin: 0 0 50px 0;
+    margin: 0 0 50px;
     box-shadow: 2px 2px 5px 8px #555557;
 }
 
@@ -365,7 +297,7 @@ section {
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgb(10, 152, 162, 0.4));
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(10, 152, 162, 0.4));
     position: absolute;
     border-radius: 8px;
     left: 0;
@@ -413,7 +345,7 @@ section {
     height: 100%;
 }
 
-/* contact section */
+/* Contact section */
 .contact {
     display: flex;
     align-items: center;
@@ -439,7 +371,7 @@ section {
     font-size: 2rem;
     letter-spacing: 2px;
     line-height: 1;
-    color: white;
+    color: #fff;
 }
 
 .contact-text h2 span {
@@ -448,14 +380,13 @@ section {
 
 .contact-container h4 {
     margin: 15px 0;
-    color: rgb(228, 228, 228);
+    color: #e4e4e4;
     font-size: 1.1rem;
     font-weight: 600;
-
 }
 
 .contact-container p {
-    color: rgb(177, 177, 177);
+    color: #b1b1b1;
     font-size: 1.2rem;
     line-height: 30px;
     margin-bottom: 1.5rem;
@@ -467,7 +398,7 @@ section {
 .contact-list li {
     margin-bottom: 10px;
     display: block;
-    color: white;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     transition: all .40s ease;
@@ -477,7 +408,6 @@ section {
 .contact-list li i {
     display: inline-block;
     color: #0ef;
-
 }
 
 .contact-list li a:hover {
@@ -510,6 +440,7 @@ section {
     cursor: pointer;
 }
 
+/* Back to top button */
 .top {
     position: fixed;
     bottom: 2.1rem;
@@ -517,9 +448,83 @@ section {
 }
 
 .top i {
-    color: black;
+    color: #000;
     background: #0ef;
     font-size: 20px;
     padding: 10px;
     border-radius: 0.5rem;
+}
+
+/* Screen sizing */
+@media only screen and (max-width: 600px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero::after {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hover {
+        width: 150px;
+        height: 35px;
+        font-size: 16px;
+    }
+    #about {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #about .video {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    #about .discription {
+        max-width: 80%;
+    }
+
+    #about .discription p {
+        font-size: 1rem;
+    }
+    #about .discription h4{
+        text-align: center;
+    }
+    .row{
+        width: 87%;
+    }
+    .contact-container p{
+        max-width: 100%;
+    }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .hero-content h2 {
+        font-size: 2.1rem;
+    }
+
+    .hover {
+        width: 180px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hover {
+        width: 220px;
+        height: 45px;
+        font-size: 20px;
+    }
 }
