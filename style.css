@@ -372,6 +372,7 @@ section{
     letter-spacing: 2px;
     line-height: 1;
     color: #fff;
+    margin-top: 0.5rem;
 }
 
 .contact-text h2 span {
@@ -481,7 +482,7 @@ section{
     }
 
     #about .video {
-        max-width: 80%;
+        max-width: 95%;
         margin-bottom: 30px;
     }
 
@@ -491,12 +492,16 @@ section{
 
     #about .discription p {
         font-size: 1rem;
+        max-width: 100%;
     }
     #about .discription h4{
         text-align: center;
     }
+    #about .discription h4{
+        display: flex;
+    }
     .row{
-        width: 87%;
+        width: 100%;
     }
     .contact-container p{
         max-width: 100%;
