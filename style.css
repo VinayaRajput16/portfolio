@@ -501,7 +501,7 @@ section{
         display: flex;
     }
     .row{
-        width: 100%;
+        width: 96%;
     }
     .contact-container p{
         max-width: 100%;
