@@ -456,6 +456,7 @@ section{
     line-height: 30px;
     margin-bottom: 1.5rem;
     max-width: 50%;
+    text-align: justify;
 }
 
 .contact-list li {
